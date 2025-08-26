@@ -1,3 +1,4 @@
+#[allow(unused)]
 #[derive(Debug)]
 struct User {
     active: bool,
@@ -5,8 +6,10 @@ struct User {
     email: String,
     sign_in_count: u64
 }
+#[allow(unused)]
 #[derive(Debug)]
 struct Color(i32, i32, i32);
+#[allow(unused)]
 #[derive(Debug)]
 struct Point(i32, i32, i32);
 

@@ -1,3 +1,4 @@
+#[allow(unused)]
 fn main() {
     let data = "initial";
     let s1 = data.to_string();

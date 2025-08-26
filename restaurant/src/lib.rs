@@ -1,10 +1,11 @@
 mod front_of_house;
-
+#[allow(unused)]
 fn deliver_order() {}
 
 mod back_of_house {
     pub struct Breakfast {
         pub toast: String,
+        #[allow(unused)]
         seasonal_fruit: String,
     }
     impl Breakfast {
@@ -19,6 +20,7 @@ mod back_of_house {
         Soup,
         Salad,
     }
+    #[allow(unused)]
     fn fix_incorrect_order() {
         cook_order();
         super::deliver_order();
@@ -35,6 +37,8 @@ pub fn eat_at_restaurant() {
     meal.toast = String::from("Wheat");
     println!("I'd like {} toast please", meal.toast);
     // println!("I'd like {} fruit please", meal.seasonal_fruit);
+    #[allow(unused)]
     let order1 = back_of_house::Appetizer::Soup;
+    #[allow(unused)]
     let order2 = back_of_house::Appetizer::Salad;
 }

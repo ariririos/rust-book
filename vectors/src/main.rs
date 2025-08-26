@@ -21,6 +21,7 @@ fn main() {
     for i in &nums {
         println!("{i}");
     }
+    #[allow(unused)]
     #[derive(Debug)]
     enum SpreadsheetCell {
         Int(i32),
