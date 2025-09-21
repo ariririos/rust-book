@@ -1,3 +1,7 @@
+//! Adder
+//! 
+//! The adder crate contains functions that add numbers together and a struct for containing a bounds-checked guess.
+
 #[allow(dead_code)]
 #[derive(Debug)]
 struct Rectangle {
@@ -12,20 +16,49 @@ impl Rectangle {
     }
 }
 
+/// Adds two `i32`s.
+/// 
+/// # Examples
+/// ```
+/// use adder::add;
+/// 
+/// let a = 1;
+/// let b = 1;
+/// let result = add(a, b);
+/// 
+/// assert_eq!(2, result);
+/// ```
+
 pub fn add(a: i32, b: i32) -> i32 {
     a + b
 }
+
+/// Adds 2 to a u64.
 
 pub fn add_two(a: u64) -> u64 {
     a + 2
 }
 
+/// Stores a guess between 1 and 100 inclusive.
+/// 
+/// # Examples:
+/// Build a guess:
+/// ```
+/// use adder::Guess;
+/// 
+/// let my_guess = Guess::new(10);
+/// ```
+/// 
+/// # Panics:
+/// Will panic if guess is outside bounds.
+/// 
 pub struct Guess {
     #[allow(dead_code)]
     value: i32
 }
 
 impl Guess {
+    /// Creates a new Guess with bounds checking.
     pub fn new(value: i32) -> Guess {
         if value < 1 {
             panic!("Guess must be greater than or equal to 1, got {value}");
