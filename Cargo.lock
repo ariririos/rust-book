@@ -15,6 +15,10 @@ name = "closures"
 version = "0.1.0"
 
 [[package]]
+name = "iterators"
+version = "0.1.0"
+
+[[package]]
 name = "lifetimes"
 version = "0.1.0"
 
