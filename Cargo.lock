@@ -27,6 +27,10 @@ name = "minigrep"
 version = "0.1.0"
 
 [[package]]
+name = "smart_pointers"
+version = "0.1.0"
+
+[[package]]
 name = "traits"
 version = "0.1.0"
 dependencies = [
