@@ -23,11 +23,23 @@ name = "lifetimes"
 version = "0.1.0"
 
 [[package]]
+name = "message_passing"
+version = "0.1.0"
+
+[[package]]
 name = "minigrep"
 version = "0.1.0"
 
 [[package]]
+name = "mutexes"
+version = "0.1.0"
+
+[[package]]
 name = "smart_pointers"
+version = "0.1.0"
+
+[[package]]
+name = "threads"
 version = "0.1.0"
 
 [[package]]
