@@ -1,3 +1,3 @@
 [workspace]
 resolver = "3"
-members = [ "adder", "advanced_traits", "advanced_types","aggregator", "closures", "hello-async", "iterators", "lifetimes", "message_passing", "minigrep", "mutexes", "oop", "patterns", "smart_pointers", "threads", "traits", "unsafe_rust"]
+members = [ "adder", "advanced_traits", "advanced_types","aggregator", "closures", "hello-async", "hello_macro", "hello_macro/hello_macro_derive", "hello_macro_test", "iterators", "lifetimes", "macros", "message_passing", "minigrep", "mutexes", "oop", "patterns", "smart_pointers", "threads", "traits", "unsafe_rust"]
